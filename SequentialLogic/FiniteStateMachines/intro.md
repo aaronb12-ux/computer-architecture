@@ -1,6 +1,6 @@
 ## Finite State Machines (FSMs)
 
-Synchronous sequential circuits can be represented using the following structure:
+Synchronous sequential circuits can be represented using the following structure below:
 
 ![Finite State Machine Diagram](https://github.com/user-attachments/assets/7aa0fb8f-08b8-497b-aae4-f5f2327e3c2b)
 
