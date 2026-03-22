@@ -44,3 +44,6 @@ and the contamination delay acts as a buffer saying:
 
 As long as step 3 happens after step 2's window closes → no violation
 
+**My Work:**
+![CamScanner 3-22-26 14 09n](https://github.com/user-attachments/assets/4d0496f9-81bf-4cd7-8362-28fa78027944)
+
