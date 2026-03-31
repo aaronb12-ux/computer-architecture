@@ -23,4 +23,16 @@ The below circuit is an example of a circuit with no pipelining. It contains 4 b
 <img width="344" height="224" alt="Screenshot 2026-03-30 at 4 44 27 PM" src="https://github.com/user-attachments/assets/0fab4529-f1ca-4ae4-b159-0f4d8242a087" />
 
 
+This next circuit is the same as above but it is now partioned into a two-stage pipeline by adding a register between blocks 3 and 4. The first stage has a minimum clock period of 0.3 + 3 + 2 + 0.2 = 5.5ns. And the second stage has a minimum clock period of .3 + 4 + .2 = 4.5ns. The clock must be slow enough for all stages to work. Hence Tc = 5.5ns. The latency is two clock cycles, or 11ns. The throughput is 1/5.5ns = 182 Mhs. This example shows that, in a real circuit, pipelining with two stages almost doubles the throughput and slightly increases the latency. In comparison, ideal pipelining would exactly double the throughput at no penalty in latency. The disrepancy comes about because the circuit cannot be divided into two exactly equal halves and because the registers inroduce more sequencing overhead.
+
+<img width="338" height="213" alt="Screenshot 2026-03-31 at 3 24 11 PM" src="https://github.com/user-attachments/assets/eecf4f5c-b827-4afe-a2c0-15ee45567314" />
+
+
+This final example shows the same circuit paritioned into a three-stage pipline. Not that two more registers are needed to store the results of blocks 1 and 2 at the end of the first pipeline stage. The cycle time is now limited by the third stage to 4.5 ns. The latency is three cycles, or 4.5 x 3 = 13.5 ns. The throughput is 1/4.5 ns = 222 Mhz. Again, adding a pipeline stage imporves throughput at the expense of some latency.
+
+<img width="342" height="200" alt="Screenshot 2026-03-31 at 3 26 08 PM" src="https://github.com/user-attachments/assets/ed76ef85-e766-4fc3-97bb-06dd5d7c2e5c" />
+
+Although these techniques are powerful, they do not apply to all situations. The bane of parallelism is dependencies. If a current task is dependent on the result of a prior task, rather than just prior steps in the current task, the task cannot start until the prior task has completed. Parallelism is one of the most important techniques for designing high-performance digital systems.
+
+
 
