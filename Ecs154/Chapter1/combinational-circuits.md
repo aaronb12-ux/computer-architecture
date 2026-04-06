@@ -52,4 +52,8 @@ For a maxterm, anywhere there is a 0, use the positive form of that value; where
 **Key Difference:**
 - **Minterm:** Uses AND (·), 1 → positive, 0 → negative
 - **Maxterm:** Uses OR (+), 0 → positive, 1 → negative
+- a minterm is true for one row only, and a maxterm is false for one row, and one row only
+- to find a SOP, you sum all the products in the truth table whos output is 1.
+- to find a POS, you multiply all the sums in the trutht table whos output is 0.
+
 
