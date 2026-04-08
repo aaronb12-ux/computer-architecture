@@ -2,31 +2,19 @@
 
 ### Simplify the Equation
 
-\[
-\sim A \sim B \sim C + \sim A B \sim C + A B \sim C + A \sim B \sim C + \sim A \sim B C + A \sim B C
-\]
+A'B'C' + A'BC' + ABC' + AB'C' + A'B'C + AB'C
 
 #### Step-by-Step Simplification
 
-\[
-\sim C(\sim A \sim B + \sim A B + A B + A \sim B) + \sim B C(\sim A + A) \quad \text{(Distributive Law)}
-\]
+C'(A'B' + A'B + AB + AB') + B'C(A' + A)  (Distributive Law)
 
-\[
-\sim C(\sim A(\sim B + B) + A(B + \sim B)) + \sim B C(\sim A + A) \quad \text{(Distributive Law)}
-\]
+C'(A'(B' + B) + A(B + B')) + B'C(A' + A)  (Distributive Law)
 
-\[
-\sim C(\sim A(1) + A(1)) + \sim B C(1) \quad \text{(Complement Law)}
-\]
+C'(A'(1) + A(1)) + B'C(1)  (Complement Law)
 
-\[
-\sim C(1) + \sim B C \quad \text{(Identity Law)}
-\]
+C'(1) + B'C  (Identity Law)
 
-\[
-\sim C + \sim B C \quad \text{(Final Simplified Expression)}
-\]
+C' + B'C  (Final Simplified Expression)
 
 ---
 
