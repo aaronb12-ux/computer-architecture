@@ -57,3 +57,28 @@ After we change the inputs, once we wait 10 ns we might observe the output to st
 - Minimum time before any output change after input change
 - Important for meeting hold time requirements in sequential circuits
 - Found by summing delays along the shortest path
+
+---
+
+### Timing Diagrams:
+
+A timing diagram shows the **output of a circuit over time**.
+
+- It shows how signals change over time, including real physical delays.
+- Unlike a truth table, it captures both the **value** and the **timing** of signals.
+
+Examples of XOR B both **with and without delay** are below:
+
+- **Without delay:** the output changes immediately when the inputs change.
+- **With delay:** the output changes after a delay (e.g., 1 ns), so it is shifted to the right.
+
+This delay corresponds to:
+- The **contamination delay** → earliest time the output can start changing
+- The **propagation delay** → latest time the output is guaranteed to be stable
+
+<img width="549" height="170" alt="Screenshot 2026-04-14 at 5 43 33 PM" src="https://github.com/user-attachments/assets/36655bc5-8757-4156-a0af-9509c5cacddb" />
+
+
+
+
+
