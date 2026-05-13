@@ -89,3 +89,38 @@ We always have to look in the cache, which is why we have to pay the Cache Acces
 The memory hierarchy creates a pyramid:
 - **Top (fastest, smallest, most expensive):** Registers
 - **Bottom (slowest, largest, cheapest):** Hard Disk Drives
+
+---
+
+## Multilevel Caching
+
+We can have caches for our caches to help improve our performance.
+
+**Variables:**
+- CA1 = time to access cache 1
+- MR1 = miss rate for cache 1
+- CA2 = time to access cache 2
+- MR2 = miss rate for cache 2
+- MA = access time for memory
+
+**Average Memory Access Time = CA1 + MR1 × (CA2 + MR2 × MA)**
+
+---
+
+## Mapping Strategy 1: Direct-Mapped Cache
+
+Imagine that we have a cache that can fit 4 data elements but memory is 16 bytes big. Where would we look to find each element in the cache?
+
+We could map those elements as: **cache entry = address % Cache Size**
+
+<img width="458" height="119" alt="Screenshot 2026-05-12 at 4 53 10 PM" src="https://github.com/user-attachments/assets/a3835ab2-0220-42be-b248-dc48ec7860c4" />
+
+**Tag bits** tell us "where did this thing come from"
+
+If the address of the data we are trying to read does not match the tag of the value in that entry/set, then we know that's not the value we are looking for.
+
+---
+
+**Example #1:** See 53 min of 5/06 Lecture for detailed walkthrough
+
+paused 1hr
